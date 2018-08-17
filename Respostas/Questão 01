@@ -1,1 +1,20 @@
 
+1.O que são sistemas embarcados?
+São combinações de Hardware e software e com partes eletricas e mecânicas para executar uma determinada função.'São sistemas de processamentos de informaçãoes embarcadas em produto".Marwedel,P.;2011
+
+2.O que são sistemas microprocesssados?
+São sistemas na qual o computador é completamente encapsulado ou dedicado ao dispositivo ou sistema que ele controla.São sistemas embarcados na qual realizam tarefas já predefinidas.
+
+3.Apresente aplicações de sistemas embarcados: (a) Para a indústria automotiva; (b) Para eletrodomésticos; (c) Para automação industrial.
+a) computador de bordo,alarme de carro, injeção eletrônica.
+b) máquina de lavar roupa, cafeteira, geladeira.
+c) rôbos, central de alarme.
+
+4.Cite arquiteturas possíveis e as diferenças entre elas.
+As duas arquiteturas são a Risc e a Sisc.
+
+Risc:È uma arquitetura com conjunto reduzido de instruções usada em processadores com instruções reduzidas na qual oferece maior rapidez no conjunto de instruções, mais simples e mais baratos.Menor números de circuitos internos e podem trabalhar com clocks mais altos .
+Cisc: È uma arquitetura com conjunto de instruções complexas porém mais lenta na execução.Tem a capacidade de executar instruções complexas
+
+5.Por que usamos o Raspberry Pi na disciplina, ao invés de outro system-on-chip?
+Devido as várias aplicações que podem ser feitas com a Rapbarry com a utilidade da programação podendo ser feita em pyton ou em C.Pelo tamanho do equipamento  e por atender as necessidade da disciplina.
