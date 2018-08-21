@@ -5,4 +5,17 @@ Logo em seguida desenvolveram o MINiX no entanto como era gratuito Linus decicid
 2.O que são daemons?
 Um daemons é um programa que roda em background  com um processo  que comumente espera por eventos para oferecer serviços.Ele comtrola inicia,reinicia,para etc um serviço provido do seu sistema.
 
-3.
+3.O que é o shell?
+Shell é um interpretador de comandos.Ele é um programa responsável por interpretar as instruções enviadas pelo usuário e seus programas para o Kernel.
+A sua função é ler a linha de comando, interpretar seu significado, executar o comando e devolver o resultado pelas saídas. Na verdade, a interface Shell é um arquivo executável, encarregado de interpretar comandos, transmiti-los ao sistema e devolver resultados. 
+
+4.Por que é importante evitar executar o terminal como super-usuário?
+È importante evitar devido que há possibilidades qeu o usuário root possa enviar alguma comando errado e apagar alguma conta importante do usuário, ou até mesmo apagar os dados contido no sistema.Evita-se até mesmo de desconfigurar alguma parte do sistema com alguns comandos errados.
+
+5.Qual botão do teclado completa o que o usuário escreve no terminal, de acordo com o contexto?
+Tecla TaB.
+
+6.Quais botões do teclado apresentam instruções escritas anteriormente?
+tecla seta para cima.
+
+7.
