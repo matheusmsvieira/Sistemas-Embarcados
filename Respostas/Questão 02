@@ -1,1 +1,8 @@
+1.Por que o Linux recebeu esse nome?
+O Linux recebeu esse nome devido a junção do sistema operacional UNIX + Linus(criador do Linux). A origem do Unix tem relação com o desenvolvimento de um sistema operacional chamado MULTICS na qual eram gerenciados pelas empresas GE e BELL LABS.As empresas sairam do projeto e ficaram soemnte o Ken Tompsom que deu continuidade do projeto,sendo assim, tentando desenvolver um projeto melhor que o MULTICS e senso assim criando o UNIX.
+Logo em seguida desenvolveram o MINiX no entanto como era gratuito Linus decicidu desenvolver um sistema mais poderoso que o Minux na qual foi criado o Linux.
 
+2.O que são daemons?
+Um daemons é um programa que roda em background  com um processo  que comumente espera por eventos para oferecer serviços.Ele comtrola inicia,reinicia,para etc um serviço provido do seu sistema.
+
+3.
