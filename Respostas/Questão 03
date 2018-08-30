@@ -9,5 +9,26 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
    gcc ola.c -o ola (compilação)
    ./ ola (executar)
    
+ 2.Crie um código em C que pergunta ao usuário o seu nome, e imprime no terminal
+ "Ola " e o nome do usuário. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_1':
+Arquivo usuario.c
+#include <stdio.h>
+
+int main()
+{
+    char nome[20];
+    printf("Digite seu nome:");
+    scanf("%s",&nome);
+    printf ("Ola %s\n",nome);
+    return 0;
+}
+
+gcc usuario.c -o usuario  (compilação)
+./ usuario (executar)
+
+
+
+
+   
    
 
