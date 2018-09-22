@@ -27,25 +27,30 @@ gcc usuario.c -o usuario  (compilação)
 ./ usuario (executar)
 
 3. Apresente os comportamentos do código anterior nos seguintes casos:
-   (a) Se o usuário insere mais de um nome.
+   (a)  Se o usuário insere mais de um nome.
      $ ./ola_usuario_1 Eu Mesmo
-	Resposta: Ola Eu
-	(b) Se o usuário insere mais de um nome entre aspasPor exemplo:
+        Resposta: Ola Eu
+	
+   (b) Se o usuário insere mais de um nome entre aspasPor exemplo:
 		$ ./ola_usuario_1 "Eu Mesmo"
 	Resposta: Ola "Eu
-	(c) Se é usado um pipe. Por exemplo:
+	
+   (c) Se é usado um pipe. Por exemplo:
 		$ echo Eu | ./ola_usuario_1
 	Resposta: Ola Eu
-	(d) Se é usado um pipe com mais de um nome. Por exemplo:
+	
+   (d) Se é usado um pipe com mais de um nome. Por exemplo:
 		$ echo Eu Mesmo | ./ola_usuario_1
 	Resposta: Ola Eu
-	(e) Se é usado um pipe com mais de um nome entre parênteses. Por exemplo:
+	
+   (e) Se é usado um pipe com mais de um nome entre parênteses. Por exemplo:
 		$ echo "Eu Mesmo" | ./ola_usuario_1
 	Resposta: Ola Eu
-	(f) Se é usado o redirecionamento de arquivo. Por exemplo:
+	
+   (f) Se é usado o redirecionamento de arquivo. Por exemplo:
 		$ echo Ola mundo cruel! > ola.txt
 		$ ./ola_usuario_1 < ola.txt
-   Resposta: Ola Ola
+        Resposta: Ola Ola
 
 
    
