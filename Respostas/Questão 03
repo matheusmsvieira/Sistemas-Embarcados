@@ -61,4 +61,19 @@ gcc usuario.c -o usuario  (compilação)
          return 0;
          }
    
-
+5.Apresente os comportamentos do código anterior nos seguintes casos:
+(a) Se o usuário insere mais de um nome.
+    Resposta: Ola Eu
+(b) Se o usuário insere mais de um nome entre aspas duplas. Por exemplo:
+   Resposta: Ola Eu Mesmo
+(c) Se é usado um pipe. Por exemplo:
+   Resposta: Ola (null)
+(d) Se é usado um pipe com mais de um nome. Por exemplo:
+   Resposta: Ola (null)
+(e) Se é usado um pipe com mais de um nome entre parênteses. Por exemplo:
+ Resposta: Ola (null)
+ (f) Se é usado o redirecionamento de arquivo. Por exemplo:
+  Resposta: Ola (null)
+ 
+ 
+ 
