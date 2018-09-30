@@ -75,5 +75,7 @@ gcc usuario.c -o usuario  (compilação)
  (f) Se é usado o redirecionamento de arquivo. Por exemplo:
   Resposta: Ola (null)
  
- 
- 
+ 6. Crie um código em C que faz o mesmo que o código da questão 4, e em seguida imprime no terminal quantos valores de entrada foram fornecidos pelo usuário. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_3':
+ $ ./ola_usuario_3 Eu
+	$ Ola Eu
+    $ Numero de entradas = 2
