@@ -92,3 +92,99 @@ gcc usuario.c -o usuario  (compilação)
     
 7. Crie um código em C que imprime todos os argumentos de entrada fornecidos pelo usuário. Por exemplo, considerando que o código criado recebeu o nome de 'ola_argumentos':
 	
+# include <stdio.h>
+
+int main(int argc, char **argv)
+{
+int i=1;
+ printf ("Argumentos: ");
+
+for (i=1;i<argc;i++)
+{
+printf("%s ",argv[i]);
+}
+ 
+ return 0;
+}
+
+
+$ ./ola_argumentos Eu Mesmo e Minha Pessoa
+$ Argumentos: Eu Mesmo e Minha Pessoa
+
+
+8. Crie uma função que retorna a quantidade de caracteres em uma string, usando o seguinte protótipo:
+int Num_Caracs(char *string);
+
+#include <stdio.h>
+#include "num_caracs.h"
+int Num_Caracs(char *string)
+{
+int contador=0;
+while(string[contador]!='\0')
+contador++;
+
+return contador;
+
+}
+
+Salve-a em um arquivo separado chamado 'num_caracs.c'. Salve o protótipo em um arquivo chamado 'num_caracs.h'. Compile 'num_caracs.c' para gerar o objeto 'num_caracs.o'.
+
+Compilar:
+
+- gcc -c num_caracs.c (gera o arquivo .o)
+
+9-Re-utilize o objeto criado na questão 8 para criar um código que imprime cada argumento de entrada e a quantidade de caracteres de cada um desses argumentos. Por exemplo, considerando que o código criado recebeu o nome de 'ola_num_caracs_1':
+#include <stdio.h>
+#include "num_caracs.h"
+
+int main(int argc, char **argv)
+{
+int contador=0;
+
+for (contador=0;contador<argc;contador++)
+{
+ printf ("Argumento: %s / Numero de caracteres: %d\n", argv[contador],Num_Caracs(argv[contador]));
+}
+ 
+ return 0;
+}
+
+$ ./ola_num_caracs_1 Eu Mesmo
+	$ Argumento: ./ola_num_caracs_1 / Numero de caracteres: 18
+	$ Argumento: Eu / Numero de caracteres: 2
+	$ Argumento: Mesmo / Numero de caracteres: 5
+	$
+
+
+- gcc -c ola_num_caracs_1.c (gera o arquivo .o)
+- gcc -o ola_num_caracs ola_num_caracs_1.o num_caracs.o (gera o arquivo .exe)
+
+10. Crie um Makefile para a questão anterior.
+
+11. Re-utilize o objeto criado na questão 8 para criar um código que imprime o total de caracteres nos argumentos de entrada. Por exemplo, considerando que o código criado recebeu o nome de 'ola_num_caracs_2':
+
+#include <stdio.h>
+#include "num_caracs.h"
+
+int main(int argc, char **argv)
+{
+int contador=0;
+int caracs=0;
+
+for (contador=0;contador<argc;contador++)
+{
+ caracs = caracs + Num_Caracs(argv[contador]);
+}
+printf ("Total de caracteres de entrada: %d\n",caracs);
+ return 0;
+}
+
+$ ./ola_num_caracs_2 Eu Mesmo
+$ Total de caracteres de entrada: 25
+
+
+12.Crie um Makefile para a questão anterior.
+
+
+
+
