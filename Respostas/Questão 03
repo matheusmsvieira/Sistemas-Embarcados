@@ -76,10 +76,19 @@ gcc usuario.c -o usuario  (compilação)
   Resposta: Ola (null)
  
  6. Crie um código em C que faz o mesmo que o código da questão 4, e em seguida imprime no terminal quantos valores de entrada foram fornecidos pelo usuário. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_3':
- $ ./ola_usuario_3 Eu
+ 
+ # include <stdio.h>
+
+  int main(int argc, char **argv)
+{
+ printf ("Ola %s\n", argv[1]);
+ printf("Numero de entradas = %d",argc);
+ return 0;
+}
+ 
+ ./ola_usuario_3 Eu
 	$ Ola Eu
     $ Numero de entradas = 2
     
 7. Crie um código em C que imprime todos os argumentos de entrada fornecidos pelo usuário. Por exemplo, considerando que o código criado recebeu o nome de 'ola_argumentos':
-	$ ./ola_argumentos Eu Mesmo e Minha Pessoa
-	$ Argumentos: Eu Mesmo e Minha Pessoa
+	
