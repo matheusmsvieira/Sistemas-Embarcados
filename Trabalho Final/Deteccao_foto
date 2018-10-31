@@ -1,6 +1,5 @@
 #tirar fotos 
-import cv2
- 
+import cv2 
 classificador = cv2.CascadeClassifier("haarcascade-frontalface-default.xml")
 #classificadorOlho = cv2.CascadeClassifier("haarcascade-eye.xml")
 camera = cv2.VideoCapture(0)
@@ -9,7 +8,6 @@ numeroAmostras = 25
 id = input ('Digite seu identificador:')
 largura, altura = 220, 220
 print( "Capturando as faces..... ")
-
 
 
 while(True):
